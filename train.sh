@@ -1,0 +1,11 @@
+DATA_PATH=/run/determined/workdir/shared_fs/andrew-demo-revamp/flir-camera-objects
+yolo task=detect \
+  mode=train \
+  model=yolov8n.pt \
+  batch=64 \
+  verbose=True \
+  val=True \
+  data=$DATA_PATH/data.yaml \
+  epochs=10 \
+  imgsz=256 \
+  name=yolov8n_256_64 2>&1 | tee out.log
