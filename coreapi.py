@@ -5,6 +5,7 @@ from ultralytics.yolo.v8.detect import DetectionTrainer
 dname_to_path = {
      'x-ray-rheumatology':'/run/determined/workdir/shared_fs/andrew-demo-revamp/x-ray-rheumatology/data.yaml',
      'flir-camera-objects': '/run/determined/workdir/shared_fs/andrew-demo-revamp/flir-camera-objects/data.yaml'
+     'fmv': '/datasets/virat-aerial-156-frames-v2-coco-yolov5/data-det.yaml'
     }
     
 if __name__ == '__main__':
